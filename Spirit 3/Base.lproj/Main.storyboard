@@ -23,7 +23,7 @@
                                     <fragment content="Значение">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="24" name=".SFNS-Medium"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -37,7 +37,7 @@
                                     <fragment content="счетчика">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="24" name=".SFNS-Medium"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -70,7 +70,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="tuchButtonBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHZ-Tm-vSn"/>
+                                    <action selector="addBook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtX-4C-pPp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,8 +78,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="buttonBook" destination="VGW-UU-kuR" id="Wmh-zz-J48"/>
-                        <outlet property="labelBook" destination="478-7e-h8w" id="xdL-yt-dYQ"/>
+                        <outlet property="additionBookButton" destination="VGW-UU-kuR" id="C2t-FT-Ir2"/>
+                        <outlet property="counterBookLabel" destination="478-7e-h8w" id="TZ0-rG-b5p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

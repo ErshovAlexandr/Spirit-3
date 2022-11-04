@@ -7,23 +7,16 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
-    @IBOutlet weak var labelBook: UILabel!
-    @IBOutlet weak var buttonBook: UIButton!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-var tuchButton = 0
+    @IBOutlet weak var counterBookLabel: UILabel!
+    @IBOutlet weak var additionBookButton: UIButton!
+    var book = 0
     
-    @IBAction func tuchButtonBook(_ sender: Any) {
-       tuchButton += 1
-        labelBook.text = "Значение счетчика: \(tuchButton)"
+    @IBAction func addBook(_ sender: Any) {
+        book += 1
+        counterBookLabel.text = "Значение счетчика: \(book)"
     }
-    
 }
+    
+
 
